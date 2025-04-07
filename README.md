@@ -5,17 +5,17 @@ A basic recipe website project designated as an exercise to practice core HTML c
 
 ## Implemented Features
 - ✅ Valid HTML5 structure
-- ✅ Semantic HTML usage ('<header>', '<nav>', '<main>', '<footer>')
+- ✅ Semantic HTML usage (`<header>`, `<nav>`, `<main>`, `<footer>`)
 - ✅ Recipe link navigation
 - ✅ Secondary pages with basic content
 - ✅ Proper heading hierarchy ('h1 - h6')
 
 ## HTML Concepts Practiced
-- Document boilerplate ('<!DOCTYPE>', '<html>', '<head>', '<body>')
-- Text formatting ('<p>', '<strong>', '<em>', etc.)
-- Lists ('<ul>', '<ol>', '<li>')
-- Links ('<a>' with relative/absolute paths)
-- Images ('<img>' with alt attributes)
+- Document boilerplate (`<!DOCTYPE>`, `<html>`, `<head>`, `<body>`)
+- Text formatting (`<p>`, `<strong>`, `<em>`, etc.)
+- Lists (`<ul>`, `<ol>`, `<li>`)
+- Links (`<a>` with relative/absolute paths)
+- Images (`<img>` with alt attributes)
 
 ## Next Steps (CSS Phase)
 In a future iteration we'll enhance the project with:
