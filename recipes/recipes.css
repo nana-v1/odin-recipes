@@ -1,0 +1,133 @@
+@import url(../style.css);
+
+body {
+  font-family: "Jaldi", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: calc(var(--title-size) - 20px);
+}
+
+.title-recipe {
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
+}
+
+.title-recipe::before {
+  content: "◇";
+  margin: 0 1.5rem 0 0;
+  font-size: 1.5rem;
+}
+
+.description_content {
+  width: 96%;
+  max-width: 600px;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.instructions_content {
+  width: 96%;
+  max-width: 600px;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.instructions_list {
+  padding-left: 1.02rem;
+}
+
+.instructions_list li {
+  margin-bottom: 0.5rem;
+}
+
+.ingredients_content {
+  background: var(--primary-color);
+  width: 60%;
+  max-width: 310px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem auto 2rem;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.2);
+}
+
+.ingredients_content .subtitle {
+  text-align: center;
+}
+
+.ingredients_list {
+  margin-left: 1.7rem;
+}
+
+.ending_text {
+  font-size: 1.2rem;
+  font-family: var(--subtitle_font);
+  line-height: 1.4;
+  text-align: center;
+  margin: 1.5rem auto 1rem;
+  font-weight: 800;
+}
+
+.back_btn {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 50%;
+  max-width: 250px;
+
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.07rem;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.back_btn:hover {
+  background: #000;
+  color: var(--primary-color);
+}
+
+/* Media Query configuration */
+@media (min-width: 768px) {
+  .content_container {
+    width: 96%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: fit-content 1fr;
+
+    justify-content: center;
+  }
+
+  .instructions_content {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .ingredients_content {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+}
